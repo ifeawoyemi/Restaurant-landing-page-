@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+::before,
+::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header{
+  background-image: url("/images/header.jpeg");
+  background-size: cover;
+  background-position: no-repeat;
+  width: auto;
+  height: 80vh;
+  position: relative;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.row .logo img{
+  width: 50px;
+}
+
+.bar{
+  height: 3.5px;
+  width: 2rem;
+  background-color: white;
+  border-radius: 1rem; 
+  display: block;
+  transition: 0.3s ease;
+}
+
+#bar1{
+  transform: translateY(-4px);
+}
+
+#bar3{
+  transform: translateY(4px);
+}
+
+/*.change #bar1{
+  transform: translateY(2.7px) rotateZ(45deg);
+}
+.change #bar2{
+  opacity: 0;
+}
+.change #bar3{
+  transform: translateY(-3.7px) rotate(-45deg);
+}*/
+
+/*****navigation styling.********/
+
+
+#navBar{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #000000;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+#navBar #close_icon{
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 2rem;
+}
+
+#navBar #close_icon:hover #navBar{
+  display: none;
+}
+
+#navBar ul li{
+  list-style: none;
+  margin: 3.5rem;
+}
+
+#navBar ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+#navBar ul li a:hover{
+  color: #F2E2B2;
+}
+
+.container_head{
+  text-align: center;
+  padding-top: 6rem;
+  color: white;
+  font-size: 15px;
+  animation: zoom-in-zoom-out 3s ease;
+}
+
+.container_head h1 span{
+  font-style: italic;
+  color: tomato;
+}
+
+.container_head .text_a{
+  margin-top: 4rem;
+}
+
+.text_a a{
+  padding: 1rem;
+  height: 150px;
+  background-color: transparent;
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid #F2E2B2;
+  border-radius: 2rem;
+}
+
+.text_a a:hover{
+  background-color: #F2E2B2;
+  transition: 0.5s ease-out;
+  letter-spacing: 0.2rem;
+  color: black;
+}
+
+/*meals special section*/
+.special_section{
+  background-image: url("/images/bg-sec1.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 6;
+  filter: blur;
+  outline: none;
+  height: 95vh;
+}
+
+.special_section h1{
+  color: white;
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+.special_container{
+  display: grid;
+  grid-auto-rows: auto auto auto;
+  gap: 1rem;
+  width: 300px; 
+  height: 400px;
+  animation: zoom-in-zoom-out 2s ease-in;
+}
+
+/*.special_container .special_pizza{
+  background-image: url("/images/special2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+}
+
+.special_container .special_laps{
+  background-image: url(/images/special1.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+}
+
+.special_container .special_dessert{
+  background-image: url(/images/special1.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  
+}*/
+.special_container:hover{
+  transition: 5s;
+  animation: 
+}
+/*meals special section ends*/
+@keyframes zoom-in-zoom-out{
+  0%{
+    transform: scale(0, 0);
+  }
+  85%{
+    transform: scale(1, 1);
+  }
+}

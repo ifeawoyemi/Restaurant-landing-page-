@@ -29,6 +29,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+  position: sticky;
 }
 
 .row .logo img{
@@ -64,7 +65,6 @@ body{
 
 /*****navigation styling.********/
 
-
 #navBar{
   display: none;
   width: 100%;
@@ -75,6 +75,7 @@ body{
   background-color: #000000;
   z-index: 2;
   overflow-x: hidden;
+  transition: 0.3s ease-out;
 }
 
 #navBar #close_icon{
@@ -83,10 +84,6 @@ body{
   right: 20px;
   top: 20px;
   font-size: 2rem;
-}
-
-#navBar #close_icon:hover #navBar{
-  display: none;
 }
 
 #navBar ul li{
@@ -123,13 +120,14 @@ body{
 }
 
 .text_a a{
+  font-size: 1rem;
   padding: 1rem;
   height: 150px;
   background-color: transparent;
   text-decoration: none;
   color: whitesmoke;
-  border: 1px solid #F2E2B2;
-  border-radius: 2rem;
+  border: 0.2rem solid #F2E2B2;
+  border-radius: 4rem;
 }
 
 .text_a a:hover{
@@ -139,60 +137,143 @@ body{
   color: black;
 }
 
-/*meals special section*/
+/****"meals section styling******/
 .special_section{
-  background-image: url("/images/bg-sec1.jpeg");
+  background-color: #000000;
   background-size: cover;
   background-position: center;
-  opacity: 6;
   filter: blur;
-  outline: none;
-  height: 95vh;
+  height: auto;
 }
 
 .special_section h1{
+  text-align: center;
+  padding:  3rem;
+  color: white;
+}
+
+.slideshow_container{
+  max-width: 350px;
+  position: relative;
+}
+
+.mySlides img{
+  width: 290px;
+  height: 250px;
+  padding: 0 2rem;
+}
+
+.mySlides{
+  display: none;
+}
+
+.text, h1 p{
   color: white;
   text-align: center;
-  padding: 3rem 0 2rem;
 }
 
-.special_container{
-  display: grid;
-  grid-auto-rows: auto auto auto;
-  gap: 1rem;
-  width: 300px; 
-  height: 400px;
-  animation: zoom-in-zoom-out 2s ease-in;
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-/*.special_container .special_pizza{
-  background-image: url("/images/special2.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 350px;
-  height: 200px;
+.active, .dot:hover {
+  background-color: #717171;
+}
+/*meals special section ends*/
+
+
+/**** expert section styling*****/
+#expert{
+  background-color: black;
+  padding: 2rem;
+}
+
+.expert_text{
+  margin: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.experts_container img{
+  width: 100%;
+}
+
+.expert_detail{
   text-align: center;
 }
 
-.special_container .special_laps{
-  background-image: url(/images/special1.jpeg);
+.expert_container{
+  background-color: white;
+  display: grid;
+  margin-top: 2rem;
+  height: 360px;
+  border-radius: .5rem;
+  overflow: hidden;
+  animation: fade-in 2s ease-out;
+}
+/******epert ends here****/
+
+.about{
+  background-image: url("/images/about-bg.jpeg");
   background-size: cover;
-  background-position: center;
-  width: 350px;
+  color: white;
+  padding-top: 4rem;
 }
 
-.special_container .special_dessert{
-  background-image: url(/images/special1.jpeg);
-  background-size: cover;
-  background-position: center;
-  width: 350px;
-  
-}*/
-.special_container:hover{
-  transition: 5s;
-  animation: 
+.about_us{
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #BB8A64;
 }
-/*meals special section ends*/
+.about_content .social{
+  display: flex;
+  padding: 0 .5rem 1rem;
+}
+
+.opening{
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.about i{
+  color: #BB8A64;
+}
+
+.about h4{
+  padding-right: 9rem;
+}
+
+.about_time{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about_time span{
+  border-bottom: 2px solid #BB8A64;
+  padding: 2rem 0 0 1rem;
+}
+/********about styling end********/
+.button{
+  background-color: #000000;
+}
+button{
+  background-color: #BB8A64;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+ 
+}
+
+
 @keyframes zoom-in-zoom-out{
   0%{
     transform: scale(0, 0);
@@ -200,4 +281,48 @@ body{
   85%{
     transform: scale(1, 1);
   }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (min-width: 980px){
+  body{
+    font-size: 2rem;
+  }
+  .header{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+  }
+  .navBar{
+    display: flex;
+    justify-content: center;
+  }
+  #navBar nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    overflow: hidden;
+  }
+  
+  #navBar ul li{
+    display: inline-block;
+  }
+  
+  .bar, #close_icon{
+    display: none;
+  }
+
+  
 }

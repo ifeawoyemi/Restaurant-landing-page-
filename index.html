@@ -13,7 +13,8 @@
    <!-------header start------>
   <header class="header">
     <div class="container">
-      <div class="row">
+      <div class="navBar">
+        <div class="row">
         <div class="logo">
           <a href="#"><img src="/images/seafood-icon.svg"/></a>
         </div>
@@ -25,20 +26,24 @@
          </div>
          <!-----nav section----->
          <div id="navBar">
-           <div id="close_icon">
+           
+             <div id="close_icon">
              <i onclick="closeIcon()" class="fa fa-times" aria-hidden="true"></i>
            </div>
+         
            <nav>
              <ul>
                <li><a href="">Home</a></li>
                <li><a href="#Our special">Specials</a></li>
-               <li><a href="">Menu</a></li>
-               <li><a href="">About</a></li>
-               <li><a href="">Gallery</a></li>
+               <li><a href="#expert">Experts</a></li>
+               <li><a href="#About us">About Us</a></li>
+               <li><a href="#booking">Book a Table</a></li>
                <li><a href="">Contact</a></li>
              </ul>
            </nav>
+     
          </div>
+          </div>
          <div class="container_head">
          <h1>On Time Delicious Food <span>Restaurant</span></h1>
          <p>Foodies loves us, serving the world with our burns</p>
@@ -52,25 +57,153 @@
   
   <section class="special_section">
     <h1 id="Our special">Our Special</h1>
-   <!-- <div class="special_container">
-      <div class="special_pizza">
-      <h4>Pizza</h4>
-      <h3>Not for faint hearted</h3>
-      <p>Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+    <div class="slideshow_container">
+      <div class="mySlides fade">
+        <img src="/images/special1.jpg" alt="">
+        <div class="text">
+          <h1>Pizza</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu consectetur massa. Nam eu diam ante. Aenean scelerisque a diam ut ultricies. Sed lacinia ultricies enim, viverra commodo massa ullamcorper at. Nullam at enim in magna blandit mollis at ut ante.</p>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="/images/special2.jpeg" alt="">
+        <div class="text">
+          <h1>Laps</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu consectetur massa. Nam eu diam ante. Aenean scelerisque a diam ut ultricies. Sed lacinia ultricies enim, viverra commodo massa ullamcorper at. Nullam at enim in magna blandit mollis at ut ante.</p>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="/images/special3.jpeg" alt="">
+        <div class="text">
+          <h1>Steak</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu consectetur massa. Nam eu diam ante. Aenean scelerisque a diam ut ultricies. Sed lacinia ultricies enim, viverra commodo massa ullamcorper at. Nullam at enim in magna blandit mollis at ut ante.</p>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="/images/special4.jpeg" alt="">
+        <div class="text">
+          <h1>Dessert</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu consectetur massa. Nam eu diam ante. Aenean scelerisque a diam ut ultricies. Sed lacinia ultricies enim, viverra commodo massa ullamcorper at. Nullam at enim in magna blandit mollis at ut ante.</p>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
     </div>
-    <div class="special_laps">
-      <h4>Laps</h4>
-      <h3>straigt from the oven</h3>
-      <p>Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-    </div>
-    <div class="special_dessert">
-      <h4>Desserts</h4>
-      <h3>creamy</h3>
-      <p>Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-    </div>
-    </div>-->
   </section>
   
+  <!-------Expert section-------->
+  
+<section id="expert">
+    <div class="experts_container">
+      <div class="expert_text">
+        <h1>Our Professional</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu consectetur massa. Nam eu diam ante.</p>
+      </div>
+      <div class="expert_container">
+        <img src="/images/expert1.jpg" alt="">
+        <div class="expert_detail">
+          <h1>John Doe</h1>
+           <div>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-facebook"></i>
+             <i class="fab fa-linkedin-in"></i>
+           </div>
+        </div>
+      </div>
+      <div class="expert_container">
+        <img src="/images/expert2.jpeg" alt="">
+        <div class="expert_detail">
+          <h1>John Doe</h1>
+           <div>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-facebook"></i>
+             <i class="fab fa-linkedin-in"></i>
+           </div>
+        </div>
+      </div>
+      <div class="expert_container">
+        <img src="/images/expert3.jpeg" alt="">
+        <div class="expert_detail">
+          <h1>John Doe</h1>
+          <div>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+      <div class="expert_container">
+        <img src="/images/expert4.jpeg" alt="">
+        <div class="expert_detail">
+          <h1>John Doe</h1>
+          <div>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-----------expert structure ends here---------------->
+  
+  <!-----About us ------>
+  <section class="about">
+    <div class="about_us">
+      <h1 id="About us">ABOUT US</h1>
+    </div>
+    <div class="about_content">
+      <div class="social">
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+      <h4>GOOD FOOD FOR YOUR ALL DAY GOOD MOOD</h4>
+      </div>
+      <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.
+      
+      Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>
+    </div>
+      <h5 class="opening">OUR OPENING HOURS</h5>
+    <div class="about_time">
+     <span class="day"> Monday - Friday</span> 
+     <span class="time">8AM - 6PM</span>
+     <span class="day">Saturday</span>
+     <span class="time">9AM - 5PM</span>
+     <span class="day">Sunday</span>
+     <span class="time">9AM - 4PM</span>
+    </div>
+  </section>
+  <!------about ends here-------->
+  
+  <!------booking start here---->
+  <div class="button">
+      <button id="booking" type="">BOOK A TABLE</button>
+    </div>
+    
+  <section id="Book a table" class="booking">
+    <div class="form">
+      <form action="">
+        <label for="">First Name</label><br>
+        <input type="text" name="text" placeholder="name" required><br>
+        <label for="">Last Name</label><br>
+        <input type="text" placeholder="name" required><br>
+        <label for="">Phone</label><br>
+        <input type="number" placeholder="+123" required><br>
+        <label for="">Email</label><br>
+        <input type="email" placeholder="email" required><br>
+        <label for="">Date</label><br>
+        <input type="number" placeholder="mm-dd-yyyy"><br>
+        <label for="">Time</label><br>
+        <input type="number" placeholder="12:00AM"><br>
+        <label for="">Number of People</label><br>
+        <input type="number" placeholder="number of people"><br>
+        <button type="submit">Book a table</button>
+      </form>
+    </div>
+  </section>
  
  <script src="main.js"></script>
 </body>
